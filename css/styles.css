@@ -113,7 +113,7 @@ img {
             display: none;
            }
     
-        
+       
     
            .hero-title{
             
@@ -168,7 +168,7 @@ img {
 
     /* ======================================== TABLET ======================================= */
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
         .container {
          width: 768px;
           }
@@ -292,10 +292,7 @@ img {
 
         
 
-        .features-item:not(:nth-child(n+3)) {
-          margin-bottom: 72px;
-        }
-
+       
         .team-list{
 
             display: flex;
@@ -307,18 +304,9 @@ img {
             
         }
 
-    .team-item{
        
-        flex-basis: calc(100% / 2 - 24px);
-        margin-left: 24px;
-        
-        
-    }
 
-    .team-item:not(:nth-child(n+3)){
-        margin-bottom: 64px;
-    }
-     
+
 
     .customers-list{
       justify-content: center;
@@ -333,10 +321,10 @@ img {
         margin-left: 24px;
     }
 
-    .customers-item:not(:nth-last-child(-n+3)) {
+    /* .customers-item:not(:nth-last-child(-n+3)) {
         margin-bottom: 72px;
     }
-   
+    */
 
     .footer-data{
         display: flex;
@@ -374,6 +362,7 @@ img {
         
         }
 
+      
 
     
 
@@ -382,20 +371,217 @@ img {
 
 
         @media screen and (max-width: 1199px){
+
+            .hero{
+                padding-top: 112px;
+            padding-bottom: 112px;
+            }
+
+            .features-item:not(:nth-child(n+3)) {
+                margin-bottom: 72px;
+              }
+
+            .text-features {
+                margin-top: 8px;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.02em;
+                color: var(--text-color);
+                
+                }
+        
+               
+        
+                .data-features {
+                text-align: center;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 1.11;
+                letter-spacing: 0.02em;
+                color: var(--title-color);
+                
+                    }
+
             .activity-section{
                 display: none;
             }
+
+            .team-item{
+       
+                flex-basis: calc(100% / 2 - 24px);
+                margin-left: 24px;
+                
+                
+            }
+        
+            .team-item:not(:nth-child(n+3)){
+                margin-bottom: 64px;
+            }
+
+            .customers-list{
+                flex-wrap: wrap;
+            }
+
+            
+            .customers-item:not(:nth-last-child(-n+3)) {
+                margin-bottom: 72px;
+            }
+           
+
+            .footer-part{
+                padding-top: 96px;
+                padding-bottom: 96px;
+            }
+           
+
         }
 
 
         /* ===================================== DESKTOP ======================================== */
     
     @media screen and (min-width: 1200px) {
+
+        .section {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            
+            
+        }
         .container {
         width: 1158px;
-        
-      
     }
+
+    .contact-list{
+        display: flex;
+        
+    }
+
+    .contact-data:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .contact-mail {
+    
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .contact-phone {
+    
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .hero {
+        
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1600px;
+    }
+
+    .hero-title{
+        margin-bottom: 48px;
+    }
+
+    .features-list{
+        flex-wrap: nowrap;
+       
+    }
+  
+    .features-item {
+        width: calc((100% - 72px) /4);
+       
+    }
+
+    .features-item:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    .features-item::before {
+        content: "";
+        display: block;
+        height: 112px;
+        background-color: var(--dominant-color);
+        border-radius: 4px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 8px;
+    }
+
+    .antenna-icon::before {
+        background-image: url("../images/antenna.svg");
+    }
+    
+     .clock-icon::before {
+        background-image: url("../images/clock.svg");
+     }
+
+     .diagram-icon::before {
+        background-image: url("../images/diagram.svg");
+     }
+     
+     .astronaut-icon::before {
+        background-image: url("../images/astronaut.svg");
+     }
+
+     
+
+     .data-features {
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+     }
+
+
+
+     .team-item {
+        width: calc((100% - 72px) /4);
+        
+    }
+
+    .team-item:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    .customers-list {
+        
+        gap: 24px;
+        
+        
+    }
+
+
+
+    .footer-part {
+
+        padding-top: 100px;
+        padding-bottom: 100px;
+    
+    }
+
+
+    .footer-data{
+        flex-wrap: nowrap;
+    }
+
+    .logo-footer-part{
+        margin-right: 120px;
+        margin-left: 156px;
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
 }
 
     
@@ -723,8 +909,7 @@ color: var(--text-color);
     .hero {
         
         margin: 0 auto;
-        padding-top: 112px;
-        padding-bottom: 112px;
+        
         background-color: var(--title-color);
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url("../images/heromobile.jpg");
         background-size: cover;
@@ -836,7 +1021,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
    
 
    
-     .text-features {
+     /* .text-features {
         margin-top: 8px;
         font-size: 16px;
         line-height: 1.5;
@@ -857,7 +1042,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         
             }
 
-            
+             */
     /* 
        
     
@@ -913,7 +1098,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
      
     /* =====================================================ACTIVITY================================================= */
 
-    /* .example-list {
+    .example-list {
         display: flex;
         flex-wrap: wrap;
         
@@ -929,7 +1114,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         padding-top: 0;
     }
     
-         */
     
     /* =======================================================TEAM================================================== */
     
@@ -1116,7 +1300,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
     .customers-list {
         display: flex;
-        flex-wrap: wrap;
+      
         
         
         
@@ -1221,8 +1405,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   
 .footer-part {
 
-    padding-top: 96px;
-    padding-bottom: 96px;
+    
     background-color: var(--title-color);
     }
 
