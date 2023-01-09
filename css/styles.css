@@ -338,11 +338,11 @@ img {
 
     .logo-footer-part{
         margin-right: 24px;
-        margin-left: 108px;
+       padding-left: 108px;
     }
 
     .footer-form{
-        padding-left: 108px;
+       margin-left: 108px;
     }
 
     .footer-subscribe{
@@ -567,7 +567,17 @@ img {
 
     .logo-footer-part{
         margin-right: 120px;
-        margin-left: 156px;
+        padding-left: 156px;
+    }
+
+
+    .footer-text{
+        
+        width: 264px;
+    }
+
+    .footer-form{
+        margin-left: 80px;
     }
 
 
