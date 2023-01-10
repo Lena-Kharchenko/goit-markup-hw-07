@@ -132,6 +132,10 @@ img {
                 text-align: center;
              }
 
+
+             .features-item:not(:last-child){
+                margin-bottom: 72px;
+               }
              
 
 
@@ -302,6 +306,7 @@ img {
         display: flex;
         flex-wrap: wrap;
         column-gap: 24px;
+        row-gap: 72px;
         
         
     
@@ -1039,6 +1044,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     color: var(--title-color);
    }
 
+
+   
 
    
      /* .text-features {
